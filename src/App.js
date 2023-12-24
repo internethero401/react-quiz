@@ -8,6 +8,7 @@ function App() {
       <Start />
       <p></p>
       <Correct />
+      <Correct />
     </div>
   );
 }
