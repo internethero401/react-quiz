@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Correct = () => {
+const Correct = ({propsChangeState1}) => {
     return (
     <div style={{
         display: "flex",
@@ -49,7 +49,8 @@ const Correct = () => {
 
         <div style={{display: "flex", margin:"130px 25px", justifyContent: "flex-end"}}>
             <img src="/direct.png" alt="矢印" style={{marginRight: "10px"}}/>
-            <button style={{
+            <button onClick={propsChangeState1}
+                style={{
                 height: "40px",
                 width: "180px",
                 backgroundColor: "white",
