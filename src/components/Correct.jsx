@@ -57,7 +57,8 @@ const Correct = ({propsChangeState1}) => {
                 borderStyle: "solid",
                 borderWidth: "5px",
                 borderColor: "#FFD700",
-                borderRadius: "15px",}}>
+                borderRadius: "15px",
+                cursor: 'pointer'}}>
                     <div style={{fontSize: "18px"}}>Topに戻る</div>
             </button>
         </div>
