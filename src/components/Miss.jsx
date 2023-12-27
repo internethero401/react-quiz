@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Miss = () => {
     return (
@@ -57,20 +58,22 @@ const Miss = () => {
                 cursor: 'pointer'}}>
                     <div style={{fontSize: "48px"}}>Replay</div>
             </button>
-            <button style={{
-                marginTop: "30px",
-                height: "40px",
-                width: "160px",
-                fontWeight: "bold",
-                color: "#FFD700",
-                backgroundColor: "white",
-                borderStyle: "solid",
-                borderWidth: "5px",
-                borderColor: "#FFD700",
-                borderRadius: "15px",
-                cursor: 'pointer'}}>
-                    <div style={{fontSize: "18px"}}>Topに戻る</div>
-            </button>
+            <Link to={"/"}>
+                <button style={{
+                    marginTop: "30px",
+                    height: "40px",
+                    width: "160px",
+                    fontWeight: "bold",
+                    color: "#FFD700",
+                    backgroundColor: "white",
+                    borderStyle: "solid",
+                    borderWidth: "5px",
+                    borderColor: "#FFD700",
+                    borderRadius: "15px",
+                    cursor: 'pointer'}}>
+                        <div style={{fontSize: "18px"}}>Topに戻る</div>
+                </button>
+            </Link>
         </div>
     </div >
   )

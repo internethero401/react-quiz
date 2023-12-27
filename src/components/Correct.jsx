@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-const Correct = ({propsChangeState1}) => {
+const Correct = () => {
     return (
     <div style={{
         display: "flex",
@@ -49,18 +50,19 @@ const Correct = ({propsChangeState1}) => {
 
         <div style={{display: "flex", margin:"130px 25px", justifyContent: "flex-end"}}>
             <img src="/direct.png" alt="矢印" style={{marginRight: "10px"}}/>
-            <button onClick={propsChangeState1}
-                style={{
-                height: "40px",
-                width: "180px",
-                backgroundColor: "white",
-                borderStyle: "solid",
-                borderWidth: "5px",
-                borderColor: "#FFD700",
-                borderRadius: "15px",
-                cursor: 'pointer'}}>
-                    <div style={{fontSize: "18px"}}>Topに戻る</div>
-            </button>
+            <Link to={"/"}>
+                <button style={{
+                    height: "40px",
+                    width: "180px",
+                    backgroundColor: "white",
+                    borderStyle: "solid",
+                    borderWidth: "5px",
+                    borderColor: "#FFD700",
+                    borderRadius: "15px",
+                    cursor: 'pointer'}}>
+                        <div style={{fontSize: "18px"}} >Topに戻る</div>
+                </button>
+            </Link>
         </div>
     </div >
   )
