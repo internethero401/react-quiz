@@ -1,27 +1,55 @@
 import React from 'react';
+import QuestionButton from './QuestionButton';
+import { Link } from 'react-router-dom';
 
-const Start = () => {
+const Question = () => {
   return (
-    <div id='while' style={{
-      display: 'flex', 
-      flexDirection: 'column', 
-      alignItems: 'center', // 水平方向に中央揃え
-      height: '852px', 
-      width: '393px', 
-      backgroundColor: "#FFD700" // 背景色
-    }}>
-      <div id='element1_1' style={{
-        marginTop: '0px', 
-        height: '200px', 
-        width: '360px', 
-        borderRadius: "25px", 
-        backgroundColor: "white",
-        display: 'flex', 
-        justifyContent: 'center', // 中央揃え
-        alignItems: 'center' 
-      }}>
-        <span style={{marginTop: '-20px', fontSize: "200px", color: "#FFD700"}}>Quiz</span>
-      </div>
+    <div id="while" style={{height: "100vh", width: "100%", backgroundColor: "silver"}}>
+        <div style={{
+            display: "flex",
+            flexDirection: 'column', // 子要素を縦方向に並べる
+            height: '852px',
+            width: '393px',
+            backgroundColor: "white",
+        }}>
+            <div style={{
+                height: '70px',
+                width: '393px',
+                backgroundColor: "#FFD700",
+                color: "white",
+                fontSize: "80px"
+            }}>
+                <div style={{margin: "-16px 10px"}}>Quiz</div>
+            </div>
+
+            <div style={{display: "flex", flexDirection: "column", alignItems: 'center', textAlign: "center"}}>
+                <div style={{
+                    marginTop: "90px",
+                    marginBottom: "50px",
+                    height: "200px",
+                    width: "300px",
+                    borderStyle: "solid", 
+                    borderColor: "#FFD700",
+                    borderRadius: "30px",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    backgroundColor: "white",
+                    fontSize: "25px",
+                }}>
+                    <div>次のやさいのうち1つは</div>
+                    <div>日本語ではありません。</div>
+                    <div>それはどれでしょうか？</div>
+                </div>
+                
+                <div style={{display: "flex", flexDirection: "column"}}>
+                    <Link to={"/miss"}><QuestionButton content={"シイタケ"}/></Link>
+                    <Link to={"/miss"}><QuestionButton content={"レンコン"}/></Link>
+                    <Link to={"/correct"}><QuestionButton content={"オクラ"}/></Link>
+                    <Link to={"/miss"}><QuestionButton content={"ダイコン"}/></Link>
+                </div>
+            </div>
+        </div>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Start = () => {
   return (
@@ -12,10 +13,10 @@ const Start = () => {
         backgroundColor: "#FFD700" // 背景色
       }}>
         <div id='element1_1' style={{
-          marginTop: '0px', 
+          marginTop: '160px', 
           height: '200px', 
           width: '360px', 
-          borderRadius: "25px", 
+          borderRadius: "25px",
           backgroundColor: "white",
           display: 'flex', 
           justifyContent: 'center', // 中央揃え
@@ -25,30 +26,32 @@ const Start = () => {
         </div>
 
         <p style={{
-          marginTop: '20px', 
+          marginTop: '0px', 
           color: "white", 
           fontSize: "40px", 
           textAlign: 'center' 
         }}> 
-          <p>4択形式で</p>
+          <p>4択を選んで</p>
           <p style={{marginTop: "-40px"}}>正解に辿り着こう</p>
         </p>
 
-        <button style={{
-          marginTop: '-50px', 
-          height: '120px',
-          width: '300px',
-          fontSize: '70px', 
-          fontWeight: 'bold', // フォントの太さを太く
-          color: '#FFD700',
-          backgroundColor: 'white',
-          border: 'none', 
-          borderRadius: '20px',
-          padding: '10px 40px', 
-          cursor: 'pointer', 
-        }}>
-          START
-        </button>
+        <Link to={"/question"}>
+          <button style={{
+            marginTop: '-50px', 
+            height: '120px',
+            width: '300px',
+            fontSize: '70px', 
+            fontWeight: 'bold', // フォントの太さを太く
+            color: '#FFD700',
+            backgroundColor: 'white',
+            border: 'none', 
+            borderRadius: '20px',
+            padding: '10px 40px', 
+            cursor: 'pointer', 
+          }}>
+            START
+          </button>
+        </Link>
       </div>
     </ div>
   );
