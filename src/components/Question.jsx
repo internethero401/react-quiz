@@ -13,18 +13,18 @@ const Question = () => {
             backgroundColor: "white",
         }}>
             <div style={{
-                height: '65px',
+                height: '80px',
                 width: '393px',
                 backgroundColor: "#FFD700",
                 color: "white",
                 fontSize: "80px"
             }}>
-                <div style={{margin: "-16px 10px"}}>Quiz</div>
+                <div style={{margin: "-8px 10px"}}>Quiz</div>
             </div>
 
             <div style={{display: "flex", flexDirection: "column", alignItems: 'center', textAlign: "center"}}>
                 <div style={{
-                    marginTop: "90px",
+                    marginTop: "65px",
                     marginBottom: "40px",
                     height: "240px",
                     width: "350px",

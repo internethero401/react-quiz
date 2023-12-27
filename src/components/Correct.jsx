@@ -12,13 +12,13 @@ const Correct = () => {
             backgroundColor: "white"
         }}>
             <div style={{
-                height: '70px',
+                height: '80px',
                 width: '393px',
                 backgroundColor: "#FFD700",
                 color: "white",
                 fontSize: "80px"
             }}>
-                <div style={{margin: "-16px 10px"}}>Quiz</div>
+                <div style={{margin: "-8px 10px"}}>Quiz</div>
             </div>
 
             <div style={{display: "flex", flexDirection: 'column'}}>
