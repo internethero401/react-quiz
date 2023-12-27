@@ -4,7 +4,7 @@ const QuestionButton= (props) => {
             <button style={{
                 marginTop: "6px", marginBottom: "6px",
                 height: "80px",
-                width: "300px",
+                width: "350px",
                 backgroundColor: "white",
                 borderWidth: "4px",
                 borderStyle: "solid", 

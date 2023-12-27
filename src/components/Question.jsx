@@ -13,7 +13,7 @@ const Question = () => {
             backgroundColor: "white",
         }}>
             <div style={{
-                height: '70px',
+                height: '65px',
                 width: '393px',
                 backgroundColor: "#FFD700",
                 color: "white",
@@ -25,9 +25,9 @@ const Question = () => {
             <div style={{display: "flex", flexDirection: "column", alignItems: 'center', textAlign: "center"}}>
                 <div style={{
                     marginTop: "90px",
-                    marginBottom: "50px",
-                    height: "200px",
-                    width: "300px",
+                    marginBottom: "40px",
+                    height: "240px",
+                    width: "350px",
                     borderStyle: "solid", 
                     borderColor: "#FFD700",
                     borderRadius: "30px",
@@ -35,7 +35,7 @@ const Question = () => {
                     justifyContent: "center",
                     flexDirection: "column",
                     backgroundColor: "white",
-                    fontSize: "25px",
+                    fontSize: "30px",
                 }}>
                     <div>次のやさいのうち1つは</div>
                     <div>日本語ではありません。</div>

@@ -37,7 +37,7 @@ const Correct = () => {
                     fontSize: "18px"
                 }}>
                     <div style={{margin: "30px 41px"}}>
-                        <div>実はオクラは英語!!</div>
+                        <div>実はオクラは英語! !</div>
                         <div>英語圏ではそのまま</div>
                         <div>「オクラ」と言えば通じます。</div>
                         <div>ちなみに日本では</div>
